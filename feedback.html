@@ -1,0 +1,54 @@
+<html> 
+<body> 
+	<h2>Share your experience
+		<p>We value your feedback!!</p>
+	</h2>
+	<form name="feedback" action="/" method="post"> 
+		<div class="question">
+			<p>Is this your first order with us?<br></p>
+			<div class="entries">
+				<input type="radio" name="firstorder" value="yes" required>Yes
+				<input type="radio" name="firstorder" value="no" required>No<br> 
+			</div>
+			
+			<p>How quickly could you find your product?<br></p>
+			<div class="entries">
+				<input type="radio" name="findproduct" value="easy" required>Took me no time!<br> 
+				<input type="radio" name="findproduct" value="moderate" required>It was quick but it could have been faster<br> 
+				<input type="radio" name="findproduct" value="difficult" required>Struggled a bit!<br>
+				<input type="radio" name="findproduct" value="verydifficult" required>I lost my way<br>
+			</div>
+			
+			<p>How fast was the check out process?</p>
+			<div class="entries">
+				<input type="radio" name="checkout" value="fast" required>Quick
+				<input type="radio" name="checkout" value="normal" required>Average
+				<input type="radio" name="checkout" value="slow" required>Slow<br>
+			</div>
+			
+			<p>Did you find our rentals affordable?<br></p>
+			<div class="entries">
+				<input type="radio" name="rates" value="yes" required>Yes
+				<input type="radio" name="rates" value="no" required>No<br>
+			</div>
+			
+			<p>If you have previously ordered from us, were you satisfied with the product?</p>
+			<div class="entries">
+				<input type="radio" name="prodsat" value="yes" required>Yes
+				<input type="radio" name="prodsat" value="no" required>No
+				<input type="radio" name="prodsat" value="n/a" required>Not Applicable<br>
+			
+			<p>Would you like to continue renting books from us?</p>
+			<div class="entries">
+				<input type="radio" name="contrent" value="yes" required>Yes
+				<input type="radio" name="contrent" value="no" required>No<br>
+			</div>
+			
+			<p>How can we improve?</p>
+				<textarea name="message" rows="10" cols="50" placeholder="Your Message"></textarea>
+		</div>
+		<button type="submit" class="button button-block"/>Submit</button>
+	</form> 
+</body> 
+</html>
+
