@@ -1,0 +1,352 @@
+
+/* List of Properties added till now :::
+
+	1. CSS Resets
+	2. Box-Sizing (*)
+	3. Common width and padding for all elements (.container)
+	4. Common bottom margin (.margin-bottom)
+	5. Top and Bottom paddings for major elements (.header_padding, ..)
+	6. Floating Header content (.float_header_footer)
+	7. Floating Footer content (.float_footer)
+	8. Border and Margin for Teaser content (.teaser_div_content)
+	9. Centering the search content. (.search_content)
+	10. Adding typefaces to header,footer,teaser (.header_typeface)
+	11. Adding text-property to header,footer (.header_text_property)
+	12. Header_Footer background color (.header_footer_bg_color)
+	
+	
+*/
+
+
+/* Applying CSS resets to our Homepage */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Adding the Common Properties to our HomePage */
+
+
+/* Box-Sizing Property */
+
+*,
+*:before,
+*:after {
+
+	-webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	
+}
+
+/* Setting a particular width and padding to all elements */
+
+.container {
+
+	width: 1580px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+	
+}
+
+/* Setting bottom margin to all major elements to create space */
+
+.margin_bottom {
+
+	margin-bottom: 2px;
+}
+
+/* Setting (top-bottom) padding to all the major elements  */
+
+.header_padding {
+
+	padding-top: 15px;
+	padding-bottom: 15px;
+	position: fixed;
+}
+
+.title_padding {
+	
+	padding-top: 88px;
+	padding-bottom: 50px;
+	height: 800px;
+}
+
+.teaser_padding {
+
+	padding-top: 44px;
+	padding-bottom: 44px;
+	border: 2px solid black;
+}
+
+.product_padding {
+
+	padding-top: 50px;
+	padding-bottom: 50px;
+	border: 2px solid black;
+}
+
+.footer_padding {
+
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+
+.extra_header_padding {
+
+	padding-left: 80px;
+}
+
+/* Floating the header content using inline-block display value */
+
+.float_header_footer {
+
+	margin-left: 1.5%;
+	margin-right: 1.5%;
+	display: inline-block;
+}
+
+.float_header_left {
+
+	width: 78%;
+}
+
+.float_header_right {
+	
+	width: 15%;
+}
+
+
+/* Floating the footer content using inline-block display value */
+
+.float_footer {
+	
+	width: 22%;
+}
+
+
+/* Creating borders and margin for the Teaser content */
+
+.teaser_div_content {
+
+	padding-left: 33px;
+	padding-right: 33px;
+}
+
+.teaser_content {
+
+	padding: 20px 40px;
+	margin-left: 10%;
+    margin-right: 5%;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+
+/* Centering the Search Content */
+
+.search_content {
+
+	padding-left: 32%;
+	padding-right: 38%;
+	padding-top: 35%;
+	padding-bottom: 2px;
+}
+
+.search_bar {
+
+	padding: 5px 49%;
+	border: 1.5px solid black;
+}
+
+
+/* Adding the Typefaces to every content in the Homepage */
+
+/* Typefacing the Header content */
+
+.header_typeface {
+
+	font-family: Times, serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+} 
+
+.header_typeface:hover {
+
+	color: green;
+}
+
+/* Typefacing the Title content */
+
+.title_typeface {
+
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-style: italic;
+	font-size: 40px;
+	font-weight: 400;
+	color: black;
+}
+
+.title_typeface:hover {
+
+	color: red;
+}
+
+/* Typefacing the Teaser content */
+
+.teaser_typeface {
+
+	font-family: Times, serif;
+	font-size: 15px;
+	font-weight: bold;
+	color: green;
+} 
+
+.teaser_typeface:hover {
+
+	color: red;
+}
+
+
+/* Typefacing the Footer content */
+
+.footer_typeface {
+
+	font-family: Times, serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+} 
+
+.footer_typeface:hover {
+
+	color: red;
+}
+
+
+/* Text Transformation for the Header content */
+
+.header_text_property {
+
+	text-decoration: none;
+	word-spacing: .25em;
+}
+
+/* Text Transformation for Teaser content */
+
+.teaser_text_property {
+ 
+	text-decoration: none;
+	letter-spacing: .2em;
+}
+
+
+/* Background color for the Header and Footer content */
+
+.header_bg_color {
+
+	background-color: black;
+}
+
+
+.footer_bg_color {
+
+	background-color: #606860; 
+}	
+
+/* Adding a background image for title content */
+
+.title_bg_image {
+
+	background-image: url("D:\\WebApp\\Bookshelf.jpg");
+}
+
+
+/* Adding padding and margin  for all the individual image rows of Product Content */
+
+.product_image_row {
+
+	margin-bottom: 2px;
+	padding: 2% 20% 0% 20%;
+}
+
+/* Adding borders for all the image files under Product content */
+
+img {
+
+	padding: 100px 100px;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-right: 25px;
+	
+}
+
+/* Adding padding and top-border for all the Product content categories */
+
+.product_category {
+
+	padding: 0% 0%;
+	margin-bottom: 50px;
+}
+
+.product_category_nav {
+
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+
+.product_category_style {
+
+	text-decoration: none;
+}

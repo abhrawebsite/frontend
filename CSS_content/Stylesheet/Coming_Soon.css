@@ -1,0 +1,250 @@
+
+/* This page contains the styling of the Coming Soon Books content */
+
+/* It contains the CSS Resets */
+
+/* Applying CSS resets to our Homepage */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Adding the Common Properties to our HomePage */
+
+
+/* Box-Sizing Property */
+
+*,
+*:before,
+*:after {
+
+	-webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	
+}
+
+/* Setting a particular width and padding to all elements */
+
+.container {
+
+	width: 1580px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+	
+}
+
+
+/* Setting bottom margin to all major elements to create space */
+
+.margin_bottom {
+
+	margin-bottom: 30px;
+}
+
+
+/* Setting (top-bottom) padding to all the major elements  */
+
+.header_padding {
+
+	padding-top: 15px;
+	padding-bottom: 15px;
+	width: 100%;
+}
+
+.product_padding {
+
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.footer_padding {
+
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 100%;
+	height: 100px;
+}
+
+
+/* Floating the header content using inline-block display value */
+
+.float_header_footer {
+
+	margin-left: 1.5%;
+	margin-right: 1.5%;
+	display: inline-block;
+}
+
+.float_header_left {
+
+	width: 78%;
+}
+
+.float_header_right {
+	
+	width: 15%;
+}
+
+/* Floating the footer content using inline-block display value */
+
+.float_footer {
+	
+	width: 22%;
+}
+
+
+/* Background color for the Header and Footer content */
+
+.header_bg_color {
+
+	background-color: black;
+}
+
+
+.footer_bg_color {
+
+	background-color: #606860; 
+}	
+
+
+/* Adding the Typefaces to every content in the Homepage */
+
+/* Typefacing the Header content */
+
+.header_typeface {
+
+	font-family: Times, serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+} 
+
+.header_typeface:hover {
+
+	color: green;
+}
+
+
+/* Typefacing the Footer content */
+
+.footer_typeface {
+
+	font-family: Times, serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+} 
+
+.footer_typeface:hover {
+
+	color: red;
+}
+
+
+/* Text Transformation for the Header content */
+
+.header_text_property {
+
+	text-decoration: none;
+	word-spacing: .25em;
+}
+
+
+/* Adding padding and margin  for all the individual image rows of Product Content */
+
+.product_image_row {
+
+	margin-bottom: 2px;
+	padding: 2% 20% 0% 20%;
+}
+
+/* Adding borders for all the image files under Product content */
+
+img {
+
+	padding: 100px 100px;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-right: 25px;
+	
+}
+
+/* Adding styles to the Page Navigation Button and corresponding Section field (eg: continue, previous etc) */
+
+.page_nav_button {
+	
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: #606868;
+	color: white;
+	padding: 15px 30px;
+	margin: 15px 15px;
+	width: 40px;
+	height: 5px;
+	font-family: Times, serif;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.page_nav_button:hover {
+	
+	background-color: white;
+	color: green;
+}
+
+
+.page_nav_section_padding {
+	
+	padding: 15px auto;
+	text-align: center;
+	
+}
